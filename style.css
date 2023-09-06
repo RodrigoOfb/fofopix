@@ -1,0 +1,352 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+.nav {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+.btn-nav {
+  display: flex;
+  gap: 10px;
+  height: 40px;
+  align-items: center;
+  padding: 10px 25px 10px 25px;
+  background-color: #ffffff17;
+  border-style: dashed;
+  border-width: 1px 1px 1px 1px;
+  border-color: #000000;
+  border-radius: 8px 8px 8px 8px;
+}
+/* INFORMATIONS */
+.informations {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  margin-top: 30px;
+  width: 90%;
+  border: 1px solid #fe15c8;
+  border-radius: 20px;
+}
+.informations h1 {
+  margin-top: 20px;
+  font-size: 26px;
+  font-weight: 900;
+}
+.informations .p-1 {
+  font-size: 18px;
+  width: 80%;
+  font-weight: bold;
+}
+.aproveite {
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 70px;
+  color: #2d67e9;
+  font-weight: bold;
+  border: 1px solid #2d67e9;
+  background-color: #0051d217;
+  border-radius: 8px;
+  width: 95%;
+  margin-bottom: 10px;
+  gap: 20px;
+}
+.btn-inf {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: linear-gradient(150deg, #00aa03 0%, #24e200 100%);
+  height: 65px;
+  width: 170px;
+  border-radius: 11px;
+  color: white;
+  gap: 10px;
+  box-shadow: 0px 0px 17px 0px
+    rgba(0, 55.999999999999986, 46.99999999999999, 0.45);
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* CARDS */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  margin-top: 30px;
+  width: 90%;
+  border: 1px solid #fe15c8;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.card-1 {
+  width: 100%;
+}
+.card h1 {
+  font-size: 25px;
+  color: #525451;
+}
+.avaliar {
+  display: flex;
+  border: 1px solid#fe15c8;
+  border-radius: 20px;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+  background: linear-gradient(180deg, #d24af42b 0%, #f2295b00 50%);
+}
+.avaliar img {
+  width: 97%;
+  margin-bottom: 20px;
+}
+.btn-top-av {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 50px;
+  width: 300px;
+  background-color: #d24af414;
+  border-style: dashed;
+  border-width: 1px 1px 1px 1px;
+  border-color: #d24af433;
+  color: #d24af4;
+  font-weight: 900;
+  font-size: 18px;
+  border-radius: 10px 10px 10px 10px;
+}
+.btn-av {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 90%;
+  justify-content: space-between;
+}
+.btn-av a {
+  padding: 20px 0px 10px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 100px 100px 100px 100px;
+  width: 70px;
+}
+.btn-av a img {
+  width: 60px;
+  margin: 0;
+}
+/* FOOTER */
+.footer {
+  margin-top: 60px;
+  border-top: 1px solid;
+  border-image: linear-gradient(
+      to right,
+      transparent,
+      #2d67e9,
+      #01ae74,
+      transparent
+    )
+    1;
+  background: linear-gradient(150deg, #ebfffb 0%, #f8daff 100%);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+@media screen and (min-width: 860px) {
+  .nav {
+    justify-content: space-around;
+  }
+  .informations {
+    width: 60%;
+  }
+  .card {
+    width: 60%;
+  }
+  .card-second {
+    width: 60% !important;
+  }
+  .loading {
+    width: 60% !important;
+  }
+}
+/* SEGUNDA TELA */
+.loading {
+  width: 90%;
+  height: 500px;
+  margin: auto;
+  margin-bottom: 250px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  border-style: dashed;
+  border-width: 1px 1px 1px 1px;
+  border-color: #03b498;
+  border-radius: 8px 8px 8px 8px;
+}
+.d-none {
+  display: none !important;
+}
+.d-flex {
+  display: flex !important;
+}
+span[class^="dot-"] {
+  opacity: 0;
+}
+.dot-one {
+  animation: dot-one 2s infinite linear;
+}
+.dot-two {
+  animation: dot-two 2s infinite linear;
+}
+.dot-three {
+  animation: dot-three 2s infinite linear;
+}
+@keyframes dot-one {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes dot-two {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes dot-three {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.loader-container {
+  width: 89%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  height: 30px;
+  background-color: #f3f3f3;
+}
+
+.loader {
+  width: 80%;
+  height: 100%;
+  background: linear-gradient(150deg, #01b375 0%, #2d67e9 100%);
+  animation-name: progress;
+  animation-duration: 7s;
+  animation-iteration-count: 1; /* Executa a animação apenas uma vez */
+  animation-fill-mode: forwards; /* Faz a animação parar no estado final */
+}
+
+@keyframes progress {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.card-second {
+  width: 90%;
+  height: 500px;
+  margin: auto;
+  margin-bottom: 250px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  border-style: dashed;
+  border-width: 1px 1px 1px 1px;
+  border-color: #03b498;
+  border-radius: 8px 8px 8px 8px;
+}
+.saldo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(150deg, #01b375 0%, #2d67e9 100%);
+  width: 90%;
+  height: 65px;
+  border-radius: 10px;
+  color: white;
+  gap: 20px;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.card-second h1 {
+  font-size: 22px;
+  color: #54555c;
+  margin-top: 20px;
+}
+.card-second h2 {
+  text-align: center;
+  width: 90%;
+  font-size: 15px;
+  color: #858585;
+}
